@@ -62,7 +62,7 @@ echo "$TOKEN" > "$TOKEN_FILE"
   rm -f "$TOKEN_FILE"
 
   # Unset proxy for direct access to Feishu API
-  unset http_proxy https_proxy HTTP_PROXY HTTPS_PROXY ALL_PROXY all_proxy
+  unset http_proxy https_proxy HTTP_PROXY HTTPS_PROXY ALL_PROXY all_proxy no_proxy NO_PROXY
 
   curl -s -o /dev/null "$WEBHOOK_URL" \
     -H 'Content-Type: application/json' \
